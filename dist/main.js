@@ -10,6 +10,7 @@ let cliente2 = new Cliente("Anna", "Garibaldi", "anna55@hotmail.it", "mastercard
 let cliente3 = new Cliente("Luca", "Verdi", "lucav@gmail.com", "bonifico");
 let processo1 = new ProcessoProduzione("riciclo acqua", "implementare tecnologie per un minore utilizzo idrico e il recupero delle acque reflue", []);
 let processo2 = new ProcessoProduzione("gestione degli scarti", "riduzione degli scarti di produzione, riciclo dei rifiuti tessili e adozione di pratiche di upcycling per trasformare i capi dismessi in nuovi prodotti", []);
+let processo3 = new ProcessoProduzione("minimizzazione dell'inquinamento", "riduzione dell'uso di sostanze chimiche dannose per l'ambiente e per la salute durante i processi di tintura e finissaggio", []);
 cliente1.ordinaProdotto(costume1);
 processo1.aggiungiProdotto(costume1);
 cliente2.ordinaProdotto(pareo1);
@@ -18,4 +19,7 @@ cliente3.ordinaProdotto(cappello1);
 processo2.aggiungiProdotto(cappello1);
 cliente3.ordinaProdotto(cappello2);
 processo2.aggiungiProdotto(cappello2);
+processo1.resoconto();
+processo2.resoconto();
+processo3.resoconto();
 //# sourceMappingURL=main.js.map

@@ -75,6 +75,12 @@ let processo2 = new ProcessoProduzione(
   []
 );
 
+let processo3 = new ProcessoProduzione(
+  "minimizzazione dell'inquinamento",
+  "riduzione dell'uso di sostanze chimiche dannose per l'ambiente e per la salute durante i processi di tintura e finissaggio",
+  []
+);
+
 
 cliente1.ordinaProdotto(costume1);
 processo1.aggiungiProdotto(costume1);
@@ -88,3 +94,7 @@ processo2.aggiungiProdotto(cappello1);
 cliente3.ordinaProdotto(cappello2);
 processo2.aggiungiProdotto(cappello2);
 
+
+processo1.resoconto();
+processo2.resoconto();
+processo3.resoconto();

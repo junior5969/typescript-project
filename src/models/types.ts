@@ -49,12 +49,12 @@ export function isPagamento(x: any): x is TipiPagamento {
 }
 
 export type TipiProcesso =
-  | "utilizzo tessuti riciclati"
+  | "minimizzazione dell'inquinamento"
   | "gestione degli scarti"
   | "riciclo acqua";
 
-const processiValidi: TipiProcesso[] = [
-  "utilizzo tessuti riciclati",
+export const processiValidi: TipiProcesso[] = [
+  "minimizzazione dell'inquinamento",
   "gestione degli scarti",
   "riciclo acqua",
 ];

@@ -29,8 +29,8 @@ const pagamentiValidi = ["mastercard", "postepay", "bonifico"];
 export function isPagamento(x) {
     return (typeof x === 'string') && pagamentiValidi.includes(x);
 }
-const processiValidi = [
-    "utilizzo tessuti riciclati",
+export const processiValidi = [
+    "minimizzazione dell'inquinamento",
     "gestione degli scarti",
     "riciclo acqua",
 ];
